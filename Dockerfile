@@ -8,4 +8,6 @@ RUN apk add --no-cache curl git maven openjdk8 \
     && apk del curl \
     && apk del git \
     && apk del maven \
-    && apk del openjdk8
+    && apk del openjdk8 \
+    && rm -rf /graphify \
+    && rm -rf /root/.m2
